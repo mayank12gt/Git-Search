@@ -3,11 +3,15 @@ import React from 'react'
 
 function ProfileCard(props) {
     
-const {name, login, public_repos, following, followers,avatar_url} = props.profile
+const {name, login, public_repos, following, followers,avatar_url,html_url} = props.profile
 console.log('changedcard')
 
   return (
     <Card
+    cursor={'pointer'}
+    onClick={()=>{
+      window.open(html_url)
+    }}
     w={'80%'}
     maxW={'700px'}
     align={'center'}
