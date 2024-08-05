@@ -83,7 +83,7 @@ else{
 const getRepos = ()=>{
   //setUsername(contentRef.current.value)
   console.log(contentRef.current.value)
-  console.log(username)
+  //console.log(username)
   getUserData()
 }
   return (
